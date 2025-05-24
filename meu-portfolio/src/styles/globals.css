@@ -1,0 +1,23 @@
+/* Adicione estas regras ao seu CSS global */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#root, .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Adicione um padding-bottom no elemento principal para evitar que o conteúdo seja escondido pelo footer fixado */
+main {
+    padding-bottom: 80px; /* Ajuste este valor conforme a altura do seu footer */
+}

@@ -1,0 +1,25 @@
+.footer {
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: auto;
+    position: fixed; /* Alterado de relative para fixed */
+    bottom: 0;
+    left: 0; /* Garantir que fique alinhado à esquerda */
+    z-index: 10; /* Garantir que fique acima de outros elementos */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 0.9rem;
+}

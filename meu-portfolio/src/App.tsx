@@ -8,6 +8,7 @@ import MySkills from './pages/MySkills/MySkills';
 import Portifolio from './pages/Portifolio/Portifolio';
 import Contact from './pages/Contact/Contact';
 import Navigation from './components/navigation/Navigation';
+import './styles/theme.css'
 
 function App() {
   return (

@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  color: var(--color-text);
+  background: var(--color-bg-gradient);
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+}
+
+.titulo {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.titulo h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  border-bottom: 3px solid var(--color-accent);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.conteudo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-secondary);
+}
+
+.conteudo h2 {
+  font-size: 2.8rem;
+  margin: 1rem 0;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.conteudo span {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+}
+
+.redes {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.redesButton {
+  background-color: var(--color-surface-elevated);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.redesButton svg {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+  fill: var(--color-text-secondary);
+}
+
+.redesButton:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.redesButton:hover svg {
+  fill: var(--color-text);
+}
+
+.donwloadButton {
+  margin-top: 2rem;
+}
+
+/* Estilo para o botão de download CV */
+.downloadCV {
+  padding: 0.8rem 2rem;
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.downloadCV:hover {
+  background-color: #FF8C5F;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.downloadCV svg {
+  width: 18px;
+  height: 18px;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+  
+  .conteudo {
+    margin-bottom: 2rem;
+  }
+  
+  .redes {
+    justify-content: center;
+  }
+}

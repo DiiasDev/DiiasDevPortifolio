@@ -1,0 +1,7 @@
+:root {
+  /* Colors for the about me section */
+  --about-bg-color: #110033;
+  --about-text-color: #ffffff;
+  --about-accent-color: #ff6b4a;
+  --about-text-secondary: rgba(255, 255, 255, 0.85);
+}

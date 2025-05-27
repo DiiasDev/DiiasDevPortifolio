@@ -17,7 +17,6 @@ export default function HomePage() {
                     </span>
 
                     <div className={styles.redes}>
-                        {/* LinkedIn */}
                         <a
                             href="https://www.linkedin.com/in/gabriel-dias-8a8209255/"
                             className={styles.redesButton}
@@ -30,7 +29,6 @@ export default function HomePage() {
                             </svg>
                         </a>
 
-                        {/* GitHub */}
                         <a
                             href="https://github.com/DiiasDev"
                             className={styles.redesButton}

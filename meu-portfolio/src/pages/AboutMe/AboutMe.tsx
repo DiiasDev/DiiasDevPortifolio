@@ -17,12 +17,12 @@ export default function AboutMe() {
                     </div>
                     <div className={styles.textArea}>
                         <h3 className={styles.subtitle}>
-                            Desenvolvedor Frontend<br />&amp; UI Designer
+                            Desenvolvedor Frontend<br />
                         </h3>
                         <p className={styles.description}>
                             Olá, eu me chamo <strong>Gabriel Dias</strong>, tenho 22 anos e sou de Campinas-SP.<br />
                             Atualmente estou cursando <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> na Wyden.<br />
-                            Além disso, atuo como <strong>desenvolvedor P&D (Trainee)</strong>, trabalhando com <strong>JavaScript</strong> e <strong>Python</strong>.<br />
+                            Além disso, atuo como <strong>desenvolvedor P&D</strong>, trabalhando com <strong>JavaScript</strong> e <strong>Python</strong>.<br />
                             Utilizo frameworks como <strong>Vue</strong> e <strong>React</strong>.<br /><br />
                             Atuo principalmente na área de frontend, desenvolvendo novas páginas, melhorando páginas existentes e auxiliando colegas de equipe a entender as tecnologias utilizadas na empresa.<br />
                             Estou na área há 7 meses e já consegui ampliar minha visão técnica sobre desenvolvimento.<br /><br />

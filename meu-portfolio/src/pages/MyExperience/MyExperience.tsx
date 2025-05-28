@@ -5,7 +5,10 @@ export default function MyExperience() {
     return (
         <>
             <div className={styles.container}>
-                <h2 className={styles.title}>Minha Experiência Profissional</h2>
+                <h2 className={styles.pageTitle}>
+                    Minha Melhor <span className={styles.accent}>Experiência</span>
+                </h2>
+                 <div className={styles.underline}></div>
                 <div className={styles.content}>
                     <div className={styles.card}>
                         <div className={styles.heroSection}>

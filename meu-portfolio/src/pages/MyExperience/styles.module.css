@@ -1,0 +1,346 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+.heroSection {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr65PTIkqwNLUA3K7Dsm4sYeWijNlg_Az7Xw&s');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
+.eventTitle {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+    position: relative;
+    z-index: 2;
+    color: #e8e8e8;
+    font-size: 1.1rem;
+    margin: 0;
+    font-style: italic;
+}
+
+.description {
+    margin: 2rem 0;
+    line-height: 1.8;
+}
+
+.description p {
+    margin-bottom: 1.5rem;
+    color: #34495e;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.techSection {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    border-left: 4px solid #3498db;
+}
+
+.techSection h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.techTags {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.techTag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.techTag:hover {
+    transform: translateY(-2px);
+}
+
+.gallerySection {
+    margin-top: 2rem;
+}
+
+.gallerySection h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .card {
+        padding: 1.8rem;
+    }
+    
+    .eventTitle {
+        font-size: 2rem;
+    }
+    
+    .heroSection {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+/* Mobile landscape and small tablets */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .card {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    
+    .heroSection {
+        padding: 2rem 1rem;
+        border-radius: 10px;
+    }
+    
+    .eventTitle {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .description p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+    
+    .techSection {
+        padding: 1.2rem;
+        margin: 1.5rem 0;
+    }
+    
+    .techSection h3 {
+        font-size: 1.2rem;
+    }
+    
+    .techTags {
+        justify-content: center;
+        gap: 0.6rem;
+    }
+    
+    .techTag {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    .gallerySection h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+    .container {
+        padding: 0.8rem;
+    }
+    
+    .title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .card {
+        padding: 1.2rem;
+        border-radius: 12px;
+    }
+    
+    .heroSection {
+        padding: 1.5rem 0.8rem;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .eventTitle {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .description {
+        margin: 1.5rem 0;
+    }
+    
+    .description p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+    
+    .techSection {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .techSection h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .techTags {
+        gap: 0.5rem;
+    }
+    
+    .techTag {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+        border-radius: 20px;
+    }
+    
+    .gallerySection {
+        margin-top: 1.5rem;
+    }
+    
+    .gallerySection h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 320px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    .title {
+        font-size: 1.6rem;
+    }
+    
+    .card {
+        padding: 1rem;
+    }
+    
+    .heroSection {
+        padding: 1.2rem 0.6rem;
+    }
+    
+    .eventTitle {
+        font-size: 1.3rem;
+    }
+    
+    .subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .description p {
+        font-size: 0.85rem;
+    }
+    
+    .techTag {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .container {
+        padding: 2.5rem;
+    }
+    
+    .title {
+        font-size: 3rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    .card {
+        padding: 2.5rem;
+    }
+    
+    .heroSection {
+        padding: 3.5rem 2.5rem;
+    }
+    
+    .eventTitle {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}

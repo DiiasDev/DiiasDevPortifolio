@@ -8,6 +8,7 @@ import MyExperience from './pages/MyExperience/MyExperience';
 import MySkills from './pages/MySkills/MySkills';
 import Portifolio from './pages/Portifolio/Portifolio';
 import Contact from './pages/Contact/Contact';
+import NotFound from './pages/NotFound/NotFound';
 import Navigation from './components/navigation/Navigation';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/Habilidades' element={<MySkills />} />
           <Route path='/Portifolio' element={<Portifolio />} />
           <Route path='/Contact' element={<Contact />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
       <Footer />

@@ -44,3 +44,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3b32bf9b-38a3-4067-8cb9-7dd0bfbd0138/deploy-status)](https://app.netlify.com/projects/diiasdevportifolio/deploys)

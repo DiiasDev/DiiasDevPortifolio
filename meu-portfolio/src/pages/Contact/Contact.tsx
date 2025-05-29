@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 
 export default function Contact() {
     //teste
+    //teste2
     return (
         <div className={styles.container}>
             <h2 className={styles.title}>Contact</h2>

@@ -1,0 +1,68 @@
+.container {
+  max-width: 1000px; /* Adjusted to be appropriate for 2 columns */
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem; /* Increased bottom padding to 6rem */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filterButton {
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.filterButton:hover {
+  background: var(--color-surface-elevated);
+  color: var(--color-text);
+}
+
+.filterButtonActive {
+  background: var(--color-primary);
+  color: var(--color-text);
+}

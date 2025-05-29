@@ -42,9 +42,9 @@ export default function HomePage() {
                         </a>
                     </div>
 
-                    <div className={styles.donwloadButton}>
+                    {/* <div className={styles.donwloadButton}>
                         <ButttonDonwload />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className={styles.image}>

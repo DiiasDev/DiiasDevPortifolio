@@ -6,6 +6,9 @@ interface BarraDeProgressoProps {
 }
 
 export default function BarrasDeProgresso({ skill, porcentagem }: BarraDeProgressoProps) {
+
+  //teste
+
   return (
     <div className={styles.skillBar}>
       <div className={styles.skillInfo}>
